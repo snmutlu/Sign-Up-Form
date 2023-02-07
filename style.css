@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #131034;
+/*Sayfamızın üst-alt--sağ-sol sıfırlamasını yaptığımız ve arkaplan rengini belirlediğimiz bölüm*/
+}
+.signup-form{
+    /*En dış div'imizin özelliklerini belirlediğimiz bölüm*/
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-image: url(image/image-1.jpg); /*Div'imizin arka plan resmini verdiğimiz bölüm*/
+
+    position: absolute; /*Bu bölümler div'i ekranda ortalamak için 4 satır*/
+    top: 50%;           /*Bu bölümler div'i ekranda ortalamak için 4 satır*/
+    left: 50%;          /*Bu bölümler div'i ekranda ortalamak için 4 satır*/
+    transform: translate(-50%,-50%);   /*Bu bölümler div'i ekranda ortalamak için 4 satır*/
+
+    overflow: hidden;
+
+    background-size: cover; /*Arkaplan resminin bütün alanı kaplaması için kullandığımız bölüm*/
+    background-position: center; /*Arkaplan resminin ortalanması için kullandığımız bölüm*/
+}
+.signup-form h1{
+    /*H1 tag'ı içerisine özelliklerini verdiğimiz bölüm*/
+    color: #fff;
+    margin-top: 100px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.signup-form input{
+    
+    display: block; /*Display: block; Bir elementin kutu şeklinde alan kaplamasını sağlayan kod parçasıdır. Kullanıldığı anda element yeni bir satırdan başlar.*/
+    width: 100%;
+    padding: 0 16px; /*Margin dediğimiz şey “dış kenar boşluğudur”. Padding ise “iç kenar boşluğu” olarak tanımlanabilir. */
+    height: 44px;
+    text-align: center; /*Text satırları içerisindeki yazıları ortalamak için kullanıldı*/
+    box-sizing: border-box; /*Bir etikete box-sizing : border-box; özelliğini verdiğimiz taktirde sayfada kaplayacağı alan genişliği kadar olacaktır. Yani border ve padding değerleri etiketin kapladığı alanı değiştirmeyecektir*/
+    font-weight: bold; /*Text satırları içerisindeki yazıları kalınlaştırmak için kullanıldı*/
+}
+
+.txt{
+    /*İnput satırlarının class'ları sayesinde kutuların köşe kıvırmaları ve konumları ayarlandı*/
+    margin: 30px 0;
+    border-radius: 7px;
+}
+.resetter{
+    /*Reset butonu ayarladım(kendi fikrimdi)*/
+    color:#fff;
+    background-color: #131034;
+    cursor: pointer; /*Buton üzerine gelindiğinde fare şeklinin değişmesiniz sağlıyor*/
+    border-radius: 55px;
+    transition: 0.8s; /*CSS Transition Geçişleri. CSS transition Özelliği bir öğe hover olduğunda ya da . active gibi bir classname aldğında değişen stil özellilerini öğeye geçişli bir şekilde vermeyi sağlar.*/
+}
+.resetter:hover{
+    /*Hover bölümleri ile butonların vs üzerine geldiğimizde şekil-renk değişimleri gibi işlemleri yapabiliyoruz*/
+    transform: scale(0.96); /*Bu bölümde buton üzerine geldiğimizde kutunun 0.96 oranında küçülmesini sağladık*/
+    color: #131034;
+    background-color: #fff;
+   
+}
+.create-btn{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background: #538fef;
+    color: #fff;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s;
+    display: block;
+}
+.create-btn:hover{
+    transform: scale(0.96);
+    background: #fff;
+    color: #538fef;
+}
+.signup-form a{
+    text-decoration: none; /* Yönlendirme-Link vs içeren satırların altındaki çizgiyi kaldırmak için kullanılıyor*/
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.8s;
+    display: block;
+}
+.signup-form a:hover{
+    color: cornflowerblue;
+    transform: scale(1.2);
+}
