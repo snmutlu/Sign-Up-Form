@@ -86,3 +86,6 @@ body{
     color: cornflowerblue;
     transform: scale(1.2);
 }
+input:focus{
+    outline: none;
+}
